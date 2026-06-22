@@ -55,13 +55,13 @@ Citizens can submit reports with images and precise map locations, while adminis
 
 ## 🏗️ System Architecture
 
-![System Architecture](./screenshots/system-architecture.png)
+![System Architecture](public/screenshots/system-architecture.png)
 
 ---
 
 ## 🔄 Workflow
 
-![Workflow Diagram](./screenshots/workflow.png)
+![Workflow Diagram](public/screenshots/workflow.png)
 
 ### Reporting Workflow
 
@@ -79,38 +79,41 @@ Citizens can submit reports with images and precise map locations, while adminis
 
 ## 🖼️ Screenshots
 
+<details>
+<summary>Click to View Screenshots ▼</summary>
+
 ### Landing Page
 
-![Landing Page](./screenshots/landing-page.png)
+![Landing Page](public/screenshots/landing-page.png)
 
 ### Login Page
 
-![Login](./screenshots/login-page.png)
+![Login](public/screenshots/login-page.png)
 
 ### User Dashboard
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](public/screenshots/dashboard.png)
 
 ### Report Issue
 
-![Report Issue](./screenshots/report-page.png)
+![Report Issue](public/screenshots/report-page.png)
 
 ### Interactive Map
 
-![Map](./screenshots/map-page.png)
+![Map](public/screenshots/map-page.png)
 
 ### Issue Details
 
-![Issue Details](./screenshots/issue-details.png)
+![Issue Details](public/screenshots/issue-details.png)
 
 ### Notifications
 
-![Notifications](./screenshots/notifications.png)
+![Notifications](public/screenshots/notifications.png)
 
 ### Admin Dashboard
 
-![Admin Dashboard](./screenshots/admin-dashboard.png)
-
+![Admin Dashboard](public/screenshots/admin-dashboard.png)
+</details>
 
 ---
 
@@ -124,13 +127,13 @@ Citizens can submit reports with images and precise map locations, while adminis
 
 ### Backend & Database
 
-<p align="center">
+<p align="left">
   <img src="https://skillicons.dev/icons?i=nodejs,mongodb" />
 </p>
 
 ### Tools & Deployment
 
-<p align="center">
+<p align="left">
   <img src="https://skillicons.dev/icons?i=git,github,vercel" />
 </p>
 
