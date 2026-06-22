@@ -118,7 +118,7 @@ Citizens can submit reports with images and precise map locations, while adminis
 
 ### Frontend
 
-<p align="center">
+<p align="left">
   <img src="https://skillicons.dev/icons?i=nextjs,react,ts,tailwind" />
 </p>
 
@@ -189,7 +189,7 @@ CLOUDINARY_API_SECRET=
 Clone repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/citylens.git
+git clone https://github.com/Shivamsharma9425/citylens.git
 ```
 
 Install dependencies:
