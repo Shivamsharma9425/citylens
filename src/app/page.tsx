@@ -1,65 +1,287 @@
-import Image from "next/image";
+import Link from "next/link";
+import DemoCredentials from "@/components/DemoCredentials";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main
+      className="
+  min-h-screen
+  bg-linear-to-b
+  from-[#020617]
+  via-[#0F172A]
+  to-[#020617]
+  text-white
+"
+    >
+      {/* Hero Section */}
+
+      <section
+        className="
+  relative
+  mx-auto
+  flex
+  max-w-6xl
+  flex-col
+  items-center
+  px-6
+  py-8
+  text-center
+"
+      >
+        <h1
+          className="
+  mb-6
+  text-6xl
+  font-extrabold
+  tracking-tight
+  md:text-8xl
+"
+        >
+          CityLens
+        </h1>
+
+        <p className="max-w-3xl text-md text-gray-400">
+          Community-driven civic issue reporting platform. Report, track and
+          monitor issues like potholes, garbage accumulation, water supply
+          problems, streetlight failures and more.
+        </p>
+        <div
+          className="
+  mt-8
+  mb-6
+  h-1
+  w-full
+  rounded-full
+  bg-blue-500
+"
+        ></div>
+      </section>
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <h2 className="mb-8 text-center text-3xl font-bold">
+          Project Highlights
+        </h2>
+
+        <div className="grid gap-5 md:grid-cols-2">
+          <div
+            className="rounded-3xl
+border
+border-[#1F2937]
+bg-[#111827]
+p-6
+shadow-lg
+transition
+hover:-translate-y-1
+hover:border-blue-500
+hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
+          >
+            <h3 className="mb-2 text-xl font-semibold">
+              📍 Interactive Issue Map
+            </h3>
+
+            <p className="text-gray-400">
+              Visualize reported issues directly on a city map using Leaflet.
+            </p>
+          </div>
+
+          <div
+            className="rounded-3xl
+border
+border-[#1F2937]
+bg-[#111827]
+p-6
+shadow-lg
+transition
+hover:-translate-y-1
+hover:border-blue-500
+hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
+          >
+            <h3 className="mb-2 text-xl font-semibold">
+              🔔 Real-Time Notifications
+            </h3>
+
+            <p className="text-gray-400">
+              Users receive updates whenever issue status changes.
+            </p>
+          </div>
+
+          <div
+            className="rounded-3xl
+border
+border-[#1F2937]
+bg-[#111827]
+p-6
+shadow-lg
+transition
+hover:-translate-y-1
+hover:border-blue-500
+hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
+          >
+            <h3 className="mb-2 text-xl font-semibold">
+              📊 Admin Analytics Dashboard
+            </h3>
+
+            <p className="text-gray-400">
+              Monitor issue distribution and resolution progress.
+            </p>
+          </div>
+
+          <div
+            className="rounded-3xl
+border
+border-[#1F2937]
+bg-[#111827]
+p-6
+shadow-lg
+transition
+hover:-translate-y-1
+hover:border-blue-500
+hover:shadow-[0_0_30px_rgba(59,130,246,0.15)]"
+          >
+            <h3 className="mb-2 text-xl font-semibold">
+              🕒 Issue Timeline Tracking
+            </h3>
+
+            <p className="text-gray-400">
+              Track every status update from report creation to resolution.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 py-10">
+        <h2 className="mb-8 text-center text-3xl font-bold">
+          Explore CityLens
+        </h2>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <div
+            className="rounded-3xl
+border
+border-[#1F2937]
+bg-[#111827]
+p-6
+shadow-lg"
+          >
+            <h3 className="mb-4 text-2xl font-bold">👤 User Journey</h3>
+
+            <ul className="space-y-2 text-gray-400 px-12">
+              <li>1. Login as Demo User</li>
+              <li>2. Report a New Issue</li>
+              <li>3. Upload Evidence Image</li>
+              <li>4. Select Location on Map</li>
+              <li>5. Track Notifications</li>
+            </ul>
+          </div>
+
+          <div
+            className="rounded-3xl
+border
+border-[#1F2937]
+bg-[#111827]
+p-6
+shadow-lg "
+          >
+            <h3 className="mb-4 text-2xl font-bold ">🛠 Admin Journey</h3>
+
+            <ul className="space-y-2 text-gray-400 px-12">
+              <li>1. Login as Admin</li>
+              <li>2. Open Dashboard</li>
+              <li>3. Review Reported Issues</li>
+              <li>4. Update Status</li>
+              <li>5. View Analytics</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-6 pt-16 pb-2">
+        <div
+          className="rounded-3xl
+border
+border-[#1F2937]
+bg-[#111827]
+p-8
+shadow-[0_0_40px_rgba(59,130,246,0.12)]"
+        >
+          <h2 className="mb-6 text-center text-3xl font-bold">Demo Access</h2>
+          <p className="mb-6 text-center text-gray-400">
+            Use the demo accounts below to explore both user and administrator
+            workflows.
           </p>
+
+          <DemoCredentials />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </section>
+
+      <section className="py-16 text-center">
+        <h2 className="mb-6 text-4xl font-bold">Ready to Explore CityLens?</h2>
+
+        <div className="flex justify-center gap-4">
+          <Link
+            href="/login"
+            className="
+rounded-xl
+bg-blue-600
+px-8
+py-3
+font-medium
+text-white
+transition
+hover:bg-blue-700
+"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Login
+          </Link>
+
+          <Link
+            href="/register"
+            className="
+rounded-xl
+bg-blue-600
+px-8
+py-3
+font-medium
+text-white
+transition
+hover:bg-blue-700
+"
           >
-            Documentation
-          </a>
+            Register
+          </Link>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="py-10">
+        <h2 className="mb-6 text-center text-3xl font-bold">Built With</h2>
+
+        <div className="flex flex-wrap justify-center gap-3">
+          {[
+            "Next.js",
+            "TypeScript",
+            "MongoDB",
+            "JWT",
+            "Cloudinary",
+            "Leaflet",
+            "TailwindCSS",
+            "Recharts",
+          ].map((tech) => (
+            <span
+              key={tech}
+              className="
+        rounded-full
+border
+border-blue-500/20
+bg-blue-500/10
+        px-4
+        py-2
+        text-sm
+        "
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }
